@@ -1,0 +1,24 @@
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: mediumturquoise;
+    display: flex;
+  }
+  
+  .carousel-content {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    width: 75%;
+    flex-shrink: 0;
+    padding: 10px;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .carousel-item {
+        width: 50%;
+    }
+  }

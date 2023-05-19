@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .item {
+    width: 25%;
+    height: 100%;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    
+    h1 {
+      font-size: 20px;
+    }
+
+    .header-item-container {
+        flex-direction: column-reverse;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .item {
+      width: 50%;
+    }
+  }
+  

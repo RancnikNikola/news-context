@@ -3,11 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import { TopArticlesProvider } from './context/top-articles.context';
+import { EverythingArticlesProvider } from './context/everything-articles.context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <TopArticlesProvider>
+        <EverythingArticlesProvider>
+          <App />
+        </EverythingArticlesProvider>
+      </TopArticlesProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

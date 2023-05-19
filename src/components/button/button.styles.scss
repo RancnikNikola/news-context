@@ -1,0 +1,24 @@
+.button-container {
+    min-width: 150px;
+    width: auto;
+    height: 50px;
+    padding: 0 35px 0 35px;
+    font-size: 15px;
+    background-color: red;
+    color: black;
+    text-transform: uppercase;
+    border: none;
+    display: flex;
+    justify-content: center;
+
+    &.google-sign-in {
+        background-color: blue;
+        color: white;
+    }
+
+    &.inverted {
+        background-color: darkgreen;
+        border: none;
+        color: red;
+    }
+}
